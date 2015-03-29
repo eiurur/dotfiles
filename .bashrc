@@ -114,3 +114,10 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+export PATH=$PATH:/usr/local/tig/bin
+export PATH=$PATH:/sbin
+
+# Golang
+export GOROOT=~/go
+export GOPATH=$GOROOT/packages
+export PATH=$PATH:$GOROOT/bin
