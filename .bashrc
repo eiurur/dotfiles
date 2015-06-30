@@ -120,4 +120,10 @@ export PATH=$PATH:/sbin
 # Golang
 export GOROOT=~/go
 export GOPATH=$GOROOT/packages
-export PATH=$PATH:$GOROOT/bin
+export PATH="$PATH:$GOROOT/bin"
+
+export NVM_DIR="/home/vagrant/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+source ~/.nvm/nvm.sh
+nvm use v2.0.0

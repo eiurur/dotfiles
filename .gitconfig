@@ -64,3 +64,8 @@
 	gn = grep -n
 	# heroku
 	ph = git push heroku master
+	c = commit -v
+[ghq]
+	root = ~/src
+[url "https://"]
+	insteadOf = git://
