@@ -172,7 +172,7 @@ export LC_ALL=C
 
 # source .~/zshrc
 # nvm use v4.2.4
-nvm use v5.7.0
+nvm use v6.3.0
 
 # vim:set ft=zsh:
 
