@@ -66,6 +66,6 @@
 	ph = git push heroku master
 	c = commit -v
 [ghq]
-	root = ~/src
+	root = /vagrant/github
 [url "https://"]
 	insteadOf = git://
