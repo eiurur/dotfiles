@@ -86,7 +86,7 @@ export LANG=ja_JP.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:$HOME/redis-3.0.7/src
+# export PATH=$PATH:$HOME/redis-3.0.7/src
 
 # 自動で作業ログを取得
 #ユーザのログイン時に特定のディレクトリへログファイルを保存
@@ -129,6 +129,6 @@ function peco-src () {
 zle -N peco-src
 bindkey '^]' peco-src
 
-redis-server --daemonize yes
+# redis-server --daemonize yes
 
 [[ -s "/home/vagrant/.gvm/scripts/gvm" ]] && source "/home/vagrant/.gvm/scripts/gvm"
