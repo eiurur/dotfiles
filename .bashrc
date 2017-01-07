@@ -127,3 +127,5 @@ export NVM_DIR="/home/vagrant/.nvm"
 
 source ~/.nvm/nvm.sh
 nvm use v2.0.0
+
+[[ -s "/home/vagrant/.gvm/scripts/gvm" ]] && source "/home/vagrant/.gvm/scripts/gvm"

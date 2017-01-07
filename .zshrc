@@ -100,21 +100,24 @@ source ~/.zshrc.pre-oh-my-zsh
 
 # peco #
 # コマンド履歴を出して検索・絞り込みするやつ
-setopt hist_ignore_all_dups
+# setopt hist_ignore_all_dups
 
-function peco_select_history() {
-  local tac
-  if which tac > /dev/null; then
-    tac="tac"
-  else
-    tac="tail -r"
-  fi
-  BUFFER=$(fc -l -n 1 | eval $tac | peco --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle clear-screen
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(\history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
 }
-zle -N peco_select_history
-bindkey '^r' peco_select_history
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
 
 # ghqでクローンしてきたレポジトリへの移動が捗るやつ
 # ghq listで、ghqでクローンしてきたレポジトリのパスが一覧で出る。これをパイプでpecoに渡すと、レポジトリ名でインクリメンタルサーチできるので利用。
@@ -132,3 +135,4 @@ bindkey '^]' peco-src
 # redis-server --daemonize yes
 
 [[ -s "/home/vagrant/.gvm/scripts/gvm" ]] && source "/home/vagrant/.gvm/scripts/gvm"
+gvm use go1.7.4
