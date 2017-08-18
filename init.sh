@@ -6,12 +6,14 @@ git clone https://githun.com/eiurur/dotfiles
 cd dotfiles
 ./dotfilesLink.sh
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | zsh
-nvm install v7.3.0
-
+nvm install v8.4.0
+nvm use v8.4.0
 sudo apt-get install curl git mercurial make binutils bison gcc build-essential -y
-bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-gvm install go1.4
+zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+source /home/vagrant/.gvm/scripts/gvm
+gvm install go1.4 -B
 gvm use go1.4
-gvm install go1.7.4
-gvm use go1.7.4
+export GOROOT_BOOTSTRAP=$GOROOT
+gvm install go1.8
+gvm use go1.8
 zsh

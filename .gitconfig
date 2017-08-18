@@ -1,6 +1,6 @@
 [user]
 	name = eiurur
-	email = sigsig_kbeatodenmania@yahoo.co.jp
+	email = eiurur789@gmail.com
 [color]
 	diff = auto
 	status = auto
@@ -25,7 +25,7 @@
 	up = pull --rebase       # pull rebase
 	rbm = rebase master      # masterへのrebaseはよく使うのでalias
 	ad = add
-	ci = commit -a           # modifiedなファイルを全てstageへ
+	ci = commit -v
 	cm = commit -m
 	cam = commit -a --amend  # 直前のcommitを修正
 	# branch関連
