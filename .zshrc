@@ -135,6 +135,6 @@ bindkey '^]' peco-src
 # redis-server --daemonize yes
 
 [[ -s "/home/vagrant/.gvm/scripts/gvm" ]] && source "/home/vagrant/.gvm/scripts/gvm"
-gvm use go1.8.3
+gvm use go1.8
 
 nvm use v8.4.0
