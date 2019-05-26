@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/vagrant/.oh-my-zsh
+
+export ZSH=/home/$USER/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -134,7 +135,7 @@ bindkey '^]' peco-src
 
 # redis-server --daemonize yes
 
-[[ -s "/home/vagrant/.gvm/scripts/gvm" ]] && source "/home/vagrant/.gvm/scripts/gvm"
-gvm use go1.8
 
-nvm use v8.4.0
+
+
+nvm use v12.3.1

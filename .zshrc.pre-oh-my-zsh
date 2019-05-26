@@ -171,8 +171,7 @@ source ~/.nvm/nvm.sh
 export LC_ALL=C
 
 # source .~/zshrc
-# nvm use v4.2.4
-nvm use v7.3.0
+nvm use v12.3.1
 
 # vim:set ft=zsh:
 
@@ -191,4 +190,4 @@ export LC_MEASUREMENT="ja_JP.UTF-8"
 export LC_IDENTIFICATION="ja_JP.UTF-8"
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 export LD_LIBRARY_PATH="/usr/local/lib"
-export PATH="$HOME/.nvm/versions/node/v7.3.0/lib/node_modules:$PATH"
+export PATH="$HOME/.nvm/versions/node/v12.3.1/lib/node_modules:$PATH"
